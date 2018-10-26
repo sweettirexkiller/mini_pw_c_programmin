@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/piotrjankiewicz/Code/mini_wot_c_programming
+CMAKE_SOURCE_DIR = /Users/piotrjankiewicz/Code/mini_pw_c_programming
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/piotrjankiewicz/Code/mini_wot_c_programming/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/piotrjankiewicz/Code/mini_pw_c_programming/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mini_wot_c_programming.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/mini_wot_c_programming.dir/flags.make
 
 CMakeFiles/mini_wot_c_programming.dir/library.c.o: CMakeFiles/mini_wot_c_programming.dir/flags.make
 CMakeFiles/mini_wot_c_programming.dir/library.c.o: ../library.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/piotrjankiewicz/Code/mini_wot_c_programming/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mini_wot_c_programming.dir/library.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mini_wot_c_programming.dir/library.c.o   -c /Users/piotrjankiewicz/Code/mini_wot_c_programming/library.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/piotrjankiewicz/Code/mini_pw_c_programming/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mini_wot_c_programming.dir/library.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mini_wot_c_programming.dir/library.c.o   -c /Users/piotrjankiewicz/Code/mini_pw_c_programming/library.c
 
 CMakeFiles/mini_wot_c_programming.dir/library.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mini_wot_c_programming.dir/library.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/piotrjankiewicz/Code/mini_wot_c_programming/library.c > CMakeFiles/mini_wot_c_programming.dir/library.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/piotrjankiewicz/Code/mini_pw_c_programming/library.c > CMakeFiles/mini_wot_c_programming.dir/library.c.i
 
 CMakeFiles/mini_wot_c_programming.dir/library.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mini_wot_c_programming.dir/library.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/piotrjankiewicz/Code/mini_wot_c_programming/library.c -o CMakeFiles/mini_wot_c_programming.dir/library.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/piotrjankiewicz/Code/mini_pw_c_programming/library.c -o CMakeFiles/mini_wot_c_programming.dir/library.c.s
 
 # Object files for target mini_wot_c_programming
 mini_wot_c_programming_OBJECTS = \
@@ -80,7 +80,7 @@ mini_wot_c_programming_EXTERNAL_OBJECTS =
 libmini_wot_c_programming.a: CMakeFiles/mini_wot_c_programming.dir/library.c.o
 libmini_wot_c_programming.a: CMakeFiles/mini_wot_c_programming.dir/build.make
 libmini_wot_c_programming.a: CMakeFiles/mini_wot_c_programming.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/piotrjankiewicz/Code/mini_wot_c_programming/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libmini_wot_c_programming.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/piotrjankiewicz/Code/mini_pw_c_programming/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libmini_wot_c_programming.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/mini_wot_c_programming.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mini_wot_c_programming.dir/link.txt --verbose=$(VERBOSE)
 
@@ -94,6 +94,6 @@ CMakeFiles/mini_wot_c_programming.dir/clean:
 .PHONY : CMakeFiles/mini_wot_c_programming.dir/clean
 
 CMakeFiles/mini_wot_c_programming.dir/depend:
-	cd /Users/piotrjankiewicz/Code/mini_wot_c_programming/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/piotrjankiewicz/Code/mini_wot_c_programming /Users/piotrjankiewicz/Code/mini_wot_c_programming /Users/piotrjankiewicz/Code/mini_wot_c_programming/cmake-build-debug /Users/piotrjankiewicz/Code/mini_wot_c_programming/cmake-build-debug /Users/piotrjankiewicz/Code/mini_wot_c_programming/cmake-build-debug/CMakeFiles/mini_wot_c_programming.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/piotrjankiewicz/Code/mini_pw_c_programming/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/piotrjankiewicz/Code/mini_pw_c_programming /Users/piotrjankiewicz/Code/mini_pw_c_programming /Users/piotrjankiewicz/Code/mini_pw_c_programming/cmake-build-debug /Users/piotrjankiewicz/Code/mini_pw_c_programming/cmake-build-debug /Users/piotrjankiewicz/Code/mini_pw_c_programming/cmake-build-debug/CMakeFiles/mini_wot_c_programming.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mini_wot_c_programming.dir/depend
 

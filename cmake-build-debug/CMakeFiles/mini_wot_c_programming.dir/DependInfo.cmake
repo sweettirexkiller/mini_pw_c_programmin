@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/piotrjankiewicz/Code/mini_wot_c_programming/library.c" "/Users/piotrjankiewicz/Code/mini_wot_c_programming/cmake-build-debug/CMakeFiles/mini_wot_c_programming.dir/library.c.o"
+  "/Users/piotrjankiewicz/Code/mini_pw_c_programming/library.c" "/Users/piotrjankiewicz/Code/mini_pw_c_programming/cmake-build-debug/CMakeFiles/mini_wot_c_programming.dir/library.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

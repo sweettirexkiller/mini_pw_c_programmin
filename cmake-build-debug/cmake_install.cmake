@@ -1,4 +1,4 @@
-# Install script for directory: /Users/piotrjankiewicz/Code/mini_wot_c_programming
+# Install script for directory: /Users/piotrjankiewicz/Code/mini_pw_c_programming
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/piotrjankiewicz/Code/mini_wot_c_programming/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/piotrjankiewicz/Code/mini_pw_c_programming/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
