@@ -6,7 +6,6 @@ I encourage you to colaborate on the programming exercises from C Programming le
  
  I. You can clone it. 
  
- Your bash: 
 ````
  git clone git@github.com:sweettirexkiller/mini_pw_c_programmin.git
  cd mini_pw_c_programmin
@@ -14,8 +13,6 @@ I encourage you to colaborate on the programming exercises from C Programming le
 
 II. You can see how the code works yourself. 
 
- ######Your bash: 
- 
  Creating executable command 
 ````
 gcc -Wall hello.c -o hello
