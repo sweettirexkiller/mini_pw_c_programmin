@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <math.h>
 
-#define N 5 // rozmiar macierzy
+#define N 5 // quadratic matrix size
 
-void MacierzJednostkowa(float A[N][N]);
+void unitMatrix(float A[N][N]);
 
-void MacierzZerowa(float A[N][N]);
+void zeroMatrix(float A[N][N]);
 
-void dodajMacierze(float A[N][N], float B[N][N]);
+void addMatricies(float A[N][N], float B[N][N]);
 
-double NastepnySladnik(int m, float Nast[N][N], float Pop[N][N], float A[N][N]);
+double nextComponent(int m, float Next[N][N], float Last[N][N], float A[N][N]);
 
-//void WypiszMacierz(float Ma[N][N]);
+//void printMartix(float Ma[N][N]);
 
 void expA(void);
 
@@ -21,7 +21,7 @@ int main() {
     return 0;
 }
 
-void MacierzZerowa(float A[N][N]) {
+void zeroMatrix(float A[N][N]) {
     int i, j;
     for (i = 0; i < N; i++)
         for (j = 0; j < N; i++)
@@ -29,8 +29,8 @@ void MacierzZerowa(float A[N][N]) {
     return;
 }
 
-void MacierzJednostkowa(float A[N][N]) {
-    MacierzZerowa(A);
+void unitMatrix(float A[N][N]) {
+    zeroMatrix(A);
     int i, j;
     for (i = 0; i < N; i++)
         for (j = 0; j < N; i++)
@@ -38,46 +38,46 @@ void MacierzJednostkowa(float A[N][N]) {
     return;
 }
 
-double NasteonySkladnik(int m, float Nast[N][N], float Pop[N][N], float A[N][N]) {
+double nextComponent(int m, float Next[N][N], float Last[N][N], float A[N][N]) {
     int i, j, k;
-    float suma, norma;
-    norma = 0.0;
+    float sum, norm;
+    norm = 0.0;
     for (i = 0; i < N; i++)
         for (j = 0; j < N; j++) {
-            suma = 0.0;
+            sum = 0.0;
             for (k = 0; k < N; k++)
-                suma += Pop[i][k] * A[k, j];
-            suma /= m;
+                sum += Last[i][k] * A[k][j];
+                sum /= m;
         }
-    return norma;
+    return norm;
 }
 
 
 void expA(void) {
     short int m;
-    float eps, norma;
-    float A[N][N], sklNp[N][N], sklPr[N][N], Wynik[N][N];
+    float epsilon, norm = 0;
+    float mainMatrix[N][N], nextPart[N][N], lastPart[N][N], Result[N][N];
 
-    MacierzJednostkowa(A);
-    MacierzJednostkowa(sklPr);
-    MacierzJednostkowa(Wynik);
+    unitMatrix(mainMatrix);
+    unitMatrix(nextPart);
+    unitMatrix(lastPart);
 
-    eps = 0.01;
+    epsilon = 0.01;
     m = 1;
 
     do {
-        if (0x0001 & m) {
-            norma = NastepnySladnik(m, sklNp, sklPr);
-            dodajMacierze(Wynik, sklPr);
+        if (0x0001 & m) { // <-- this is binary logical expression for conjunction
+            norm = (float) nextComponent(m, nextPart, lastPart, mainMatrix);
+            addMatricies(Result, lastPart);
         }
         m += 1;
 
-    } while (norma >= eps);
+    } while (norm >= epsilon);
 }
 
-void dodajMacierze(float A[N][N], float B[N][N]) {
+void addMatricies(float A[N][N], float B[N][N]) {
     for (int i = 0; i < N; ++i) {
-        for (int j = 0; j <; ++j) {
+        for (int j = 0; j <N; ++j) {
             A[i][j] += B[i][j];
         }
     }
