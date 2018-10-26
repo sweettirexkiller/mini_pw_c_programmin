@@ -28,8 +28,8 @@ int main() {
 
     printf("Primal numbers: \n");
     for (i = 2; i < N; i++) {
-        if (tablica[i] > 0) {
-            printf("%5d", table[i]);
+        if (table[i] > 0) {
+            printf("%d\n", table[i]);
         }
     }
 
