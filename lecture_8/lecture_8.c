@@ -16,7 +16,7 @@ double nextComponent(int m, float Next[N][N], float Last[N][N], float A[N][N]);
 void expA(void);
 
 int main() {
-//    expA();
+    expA();
     printf("xd forever\n");
     return 0;
 }
@@ -24,7 +24,7 @@ int main() {
 void zeroMatrix(float A[N][N]) {
     int i, j;
     for (i = 0; i < N; i++)
-        for (j = 0; j < N; i++)
+        for (j = 0; j < N; j++)
             A[i][j] = 0;
     return;
 }
@@ -33,7 +33,7 @@ void unitMatrix(float A[N][N]) {
     zeroMatrix(A);
     int i, j;
     for (i = 0; i < N; i++)
-        for (j = 0; j < N; i++)
+        for (j = 0; j < N; j++)
             if (i == j) A[i][j] = 1;
     return;
 }
