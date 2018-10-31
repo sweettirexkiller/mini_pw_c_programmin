@@ -17,7 +17,6 @@ void expA(void);
 
 int main() {
     expA();
-    printf("xd forever\n");
     return 0;
 }
 
@@ -66,7 +65,7 @@ void expA(void) {
     m = 1;
 
     do {
-        if (0x0001 & m) { // <-- this is binary logical expression for conjunction
+        if (0x0001 & m) { // <-- this is binary logical expression for conjunction (even check)
             norm = (float) nextComponent(m, nextPart, lastPart, mainMatrix);
             addMatricies(Result, lastPart);
         }
