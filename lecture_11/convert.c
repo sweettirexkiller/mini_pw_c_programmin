@@ -5,6 +5,7 @@
 #include "stdio.h"
 #include "string.h"
 #include ""
+
 #define M 11
 #define N 100
 
@@ -29,9 +30,23 @@ void num2hex(int value, char buf[M]);
 
 void num2dec(int value, char buf[M]);
 
+void printResults(struct Data table[N]);
 
 int main(int argc, char *argv[]) {
     puts('Rozpoczynamy program.');
+    int i;
+    struct Data table[N];
+    for (i = 0; i < N; ++i) {
+        table[i].value = i;
+    }
+    convert(table);
+
+    sort(table, dec);
+    printResults(table);
+    sort(table, hex);
+    printResults(table);
+    sort(table, bin);
+    printResults(table)
 
 
     return 0;
@@ -141,6 +156,15 @@ void sort(struct Data table[N], enum systemBase sB) {
         }
     }
     return;
+}
+
+
+void printResults(struct Data table[N]){
+    int i;
+    for (i = 0; i < N; ++i) {
+        printf("%d ", table[i]);
+    }
+    printf("\n");
 }
 
 
