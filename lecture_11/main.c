@@ -5,7 +5,8 @@
 #include "stdio.h"
 #include "string.h"
 
-#define N 5;
+#define M 16;
+
 int main(int argc, char *argv[]) {
     //char tab[N]; // string
     /*
@@ -24,5 +25,17 @@ int main(int argc, char *argv[]) {
      * - void * memcpy(void * dest, const void * source, size_t n) // MEMORY COPY
      *
      */
+
+    struct Data { // TYPE: structure
+        int value;
+        char hex[M];
+        char dec[M];
+        char bin[3 * M];
+    };
+
+    enum systemBase {bin, dec,hex}; //TYPE: enumerate
+
+
+
     return 0;
 }
