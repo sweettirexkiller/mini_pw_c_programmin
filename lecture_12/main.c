@@ -6,6 +6,16 @@ double funF(double x) {
     return 3.0 * sqrt(1 - x * x);
 }
 
+//ALTERNATIVE
+//
+// void funF(double *pWynik, double x){
+//    double wartosc;
+//    wartosc = 3.*sqrt(1-x*x); // *pWynik = sqrt(1-x*x);
+//    *pWynik = wartosc; // do pola o adresie pWynik przypisz wartosc
+//    return;
+//}
+
+
 double funG(double x) {
     return sqrt(1 - x * x / 4.);
 }
