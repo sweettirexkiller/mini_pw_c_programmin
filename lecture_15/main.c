@@ -33,12 +33,15 @@ int main() {
     insert(root, 60);
     insert(root, 80);
 
+    printf("Pre order:\n");
     browse_preorder(root);
     printf("\n");
 
+    printf("In order:\n");
     browse_inorder(root);
     printf("\n");
 
+    printf("Post order:\n");
     browse_postorder(root);
     printf("\n");
 
@@ -61,7 +64,7 @@ nd *insert(nd *node, int key) {
         node->left = insert(node->left, key);
     }
     else if(key > node->key){
-        node->left = insert(node->right, key);
+        node->right = insert(node->right, key);
     }
     return node;
 }

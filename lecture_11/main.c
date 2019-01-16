@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 
 
     convert(table);
-    sort(table, bin);
+    sort(table, hex);
 
     for(i = 0; i < N; i++){
         printf("%s ", table[i].bin);
